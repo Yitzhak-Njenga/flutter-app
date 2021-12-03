@@ -47,16 +47,12 @@ class _HomeState extends State<Home> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children:  <Widget>[
-            Center(
-              child: CircleAvatar(
-                backgroundImage: NetworkImage('assets/img.png'),
-                radius: 50.0,
-
-              ),
-            ),
-
+            Flexible(child:Center(child:Container(width: 200,child:ClipRRect(borderRadius: BorderRadius.circular(180),child:
+            Image.asset('assets/img.png'),
+            )
+            ),),),
             Divider(
-              height: 60.0,
+              height: 20.0,
               color: Colors.white54,
             ),
             Text(
